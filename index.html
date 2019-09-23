@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA/b8AAIZhAAD+fwAAhaEAAP//AAD//wAAz/MAAM/zAADP8wAA//8AAPgfAAB37gAAr/UAAN/7AAD//wAA"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>For Sale</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", Arial, sans-serif;
+        color: #ffffff;
+      }
+
+      main {
+        height: 100vh;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 24px;
+        line-height: 1.4;
+        overflow: hidden;
+      }
+
+      .for-sale {
+        color: #b80f0f;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      small {
+        opacity: 0.8;
+      }
+
+      .email {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="for-sale">For sale</div>
+      <small>contact with me:</small>
+      <div class="email">3zemil@gmail.com</div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <script>
+      bubbly({
+        blur: 15,
+        colorStart: "#194167",
+        colorStop: "#112144",
+        radiusFunc: () => 5 + Math.random() * 15,
+        angleFunc: () => -Math.PI / 2,
+        velocityFunc: () => Math.random() * 7.5,
+        bubbleFunc: () => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`,
+        bubbles: 350
+      });
+    </script>
+  </body>
+</html>
